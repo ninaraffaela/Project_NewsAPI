@@ -32,29 +32,20 @@ form?.addEventListener("submit", (event: Event) => {
         outputImage.src = `${urlImage}`;
         outputImage.classList.add("article-img");
         
-
         const outputContent = document.createElement("p");
         outputContent.innerText = content;
 
         const outputLink = document.createElement("a");
-        outputLink.innerText = `href=${url}`;
-        // # how to make the link / button work. what to use
-        
+        outputLink.href = url;
+        outputLink.target = "_blank";
+        outputLink.innerText = "Zum Artikel";
+    
         outputArticle.append(outputTitle, outputImage, outputContent, outputLink);
         output?.append(outputArticle);
-        
-
     }
 ,);
 })
 
 
-
-type NewsArticle = {
-    title: string;
-    content: string;
-    url: string;
-    urlImage: string;
-}
 
 
