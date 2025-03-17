@@ -4,31 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>project news api</title>
+    <link rel="stylesheet" href="./src/style.css">
   </head>
   <body>
     <h1>Project News API</h1>
     <form action="">
       <div class="keyword">
         <label for="input-search">Suchbegriff</label>
-        <input type="text" id="input-search">
+        <input type="text" id="input-search" placeholder="Suchbegriff">
       </div>
 
       <div class="language">
         <label for="input-language">Sprache</label>
         <select name="" id="input-language">
-          <option value="ar">Arabisch</option>
-          <option value="de">Deutsch</option>
-          <option value="en">Englisch</option>
-          <option value="es">Spanisch</option>
-          <option value="fr">Französisch</option>
-          <option value="he">Hebräisch</option>
-          <option value="it">Italienisch</option>
-          <option value="nl">Niederländisch</option>
-          <option value="no">Norwegisch</option>
-          <option value="pt">Portugiesisch</option>
-          <option value="ru">Russisch</option>
-          <option value="sv">Schwedisch</option>
-          <option value="zh">Chinesisch</option>
+          <option value="ar">🇸🇦Arabisch</option>
+          <option value="de" selected>🇩🇪Deutsch</option>
+          <option value="en">🇬🇧Englisch</option>
+          <option value="es">🇪🇸Spanisch</option>
+          <option value="fr">🇫🇷Französisch</option>
+          <option value="it">🇮🇹Italienisch</option>
+          <option value="nl">🇳🇱Niederländisch</option>
+          <option value="no">🇳🇴Norwegisch</option>
+          <option value="pt">🇵🇹Portugiesisch</option>
+          <option value="ru">🇷🇺Russisch</option>
+          <option value="sv">🇸🇪Schwedisch</option>
+          <option value="zh">🇨🇳Chinesisch</option>
       </select>
       </div>
 
@@ -40,12 +40,12 @@
           <option value="publishedAt">Neueste zuerst</option>
           </select>
       </div>
-      <input type="submit" value="Suchen">
+      <input type="submit" id="submit-btn" value="Suchen">
     </form>
 
     <section id="output-area">
-
     </section>
+
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

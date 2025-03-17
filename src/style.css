@@ -1,0 +1,101 @@
+@font-face {
+    font-family: "Lobster2";
+    src: url(./assets/fonts/Lobster_Two/LobsterTwo-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Karla";
+    src: url(./assets/fonts/Karla/Karla-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Karla", Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 {
+    color: teal;
+    font-size: 3rem;
+    font-family: "Lobster2";
+    margin: 2vh 0 2vh 5vw;
+}
+
+
+form {
+    /* background-color: rgba(0, 139, 139, 0.729); */
+    border: 2px solid darkcyan;
+    border-radius: 5px;
+    width: 40vw;
+    margin-left: 5vw;
+    padding: 3vh 2vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 2vh;
+    margin-bottom: 5vh;
+    
+}
+form div {
+    width: 20vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+form input {
+    width: 10vw;
+    padding: 1vh 1vw;
+}
+
+form select {
+    width: 10vw;
+}
+
+form label {
+    padding: 2vh;
+    font-size: 2rem;
+    font-family: "Lobster2";
+    color: darkcyan;
+}
+
+#submit-btn {
+    width: 10vw;
+    background-color: darkcyan;
+    color: blanchedalmond;
+    align-self: center;
+    border-radius: 5px;
+    padding: 1vh 1vw;
+
+    
+}
+
+img {
+    max-width: 100%;
+    margin-bottom: 5vh;
+}
+
+.article-card {
+    margin-left: 5vw;
+    padding: 2vh 2vw;
+    max-width: 30vw;
+    border: 1px solid teal;
+    border-radius: 5px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 3vh;
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
